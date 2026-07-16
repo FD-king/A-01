@@ -5,7 +5,8 @@
 }
 
 .fix-width {
-  max-width: 1200px;
+  max-width: 1400px;
+  margin: auto;
 }
 
 .common-btn {
@@ -96,5 +97,55 @@ a {
 /* banner-section-end */
 
 /* meet-the-speakers-section-start */
+.speaker-main-box > h1 {
+  font-size: 50px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  padding: 60px 0px;
+}
 
+.andrej-box,
+.demis-box,
+.gary-box,
+.mustafa-box {
+  /* border: 1px solid red; */
+  padding: 0 10px;
+}
+
+.andrej-box img,
+.demis-box img,
+.gary-box img,
+.mustafa-box img {
+  border-radius: 10px;
+}
+
+.andrej-box h2,
+.demis-box h2,
+.gary-box h2,
+.mustafa-box h2 {
+  /* border: 1px solid rgb(102, 255, 0); */
+  padding: 6px 0;
+}
+
+.speaker-jobs-text {
+  color: #1d4ed8;
+  font-size: 13px;
+  padding: 16px 0 0 0;
+}
+
+.speaker-info-text {
+  color: #676767;
+  padding: 0 0 25px 0;
+}
+
+.andrej-box p,
+h2 {
+}
+
+.first-two-unit,
+.second-two-unit {
+  display: flex;
+  padding: 10px 0;
+}
 /* meet-the-speakers-section-end */
