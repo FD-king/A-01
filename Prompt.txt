@@ -1,0 +1,27 @@
+first prompt:
+
+act like a professional designer and developer. i want you to build me a very good looking and practical section in the part were it says ( generate by AI). 
+
+i am creating a HTML & CSS project for my study. and the task asked me to generate a section by ai. i will get good marks if mine is unique+practicle+good looking. 
+
+i will give you a image of my figma project so that you can get a idea of the project and generate the task for me. 
+
+I want you give me HTML and CSS code written here. i dont want files or anything. i want that you write code for me here in chat. 
+
+make sure my code dont brake and use unique class and id name so that my  other css code dont overlap with it. use numbers like 001 or something like that in class and id. 
+
+i will directly copy paste the HTML and css code so make it easy to understand with comments when needed.
+
+in HTML i want the content which is most suited with the context of the figma image that i gave you. dont bring unrelated things. 
+
+leave spaces of image and tell me the things of that image ( examle= img src="" alt="cat image" ) so that i can see the alt and get the image from the internet.
+
+if anything needed from me to get more better outcome then ask me questions.
+
+
+
+second Prompt:
+
+i now want you to animate the options so that when i hover on it it will glow a little and get 0.1rem bigger
+
+generate the total CSS with this instruction.
