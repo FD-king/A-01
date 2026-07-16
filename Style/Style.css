@@ -466,5 +466,41 @@ a {
 /* AI-gen-section-end*/
 
 /* footer-start */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #2563eb;
+  background-color: #344a61;
+}
 
+footer header,
+footer div {
+  margin: 15px 43rem;
+}
+
+footer div img {
+  width: 30px;
+  height: auto;
+}
+
+footer div ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 7px 0;
+  /* border: 1px solid red; */
+}
+
+footer div ul li {
+  list-style: none;
+}
+
+footer div p {
+  padding: 7px 0px;
+  font-size: small;
+  color: rgb(218, 218, 218);
+  /* border: 1px solid red; */
+}
 /* footer-end */
