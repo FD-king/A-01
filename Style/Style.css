@@ -13,16 +13,17 @@
   background-color: #1d4ed8;
   cursor: pointer;
   margin: 5px 9px;
-  padding: 10px 22px;
+  padding: 15px 40px;
   color: #f6f8fd;
   border: none;
   border-radius: 6px;
+  font-size: medium;
 }
 
 /* nav-bar-start */
 .nav-bar-main-box {
   background-color: #ffffff;
-  height: 65px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,10 +174,10 @@ a {
 .secure-your-spot-section-first-offer,
 .secure-your-spot-section-second-offer,
 .secure-your-spot-section-third-offer {
-  padding: 0 50px;
+  padding: 0 50px 30px 50px;
   border: 1px solid #d8d8d8;
   margin: 0 10px;
-  border-radius: 10px;
+  border-radius: 14px;
 }
 
 .secure-your-spot-section-first-offer h1,
@@ -250,3 +251,216 @@ a {
   color: #b7babf;
 }
 /* secure-your-spot-section-end */
+
+/* AI-gen-section-start */
+/* ================= DC001 FAQ SECTION STYLES ================= */
+
+.dc001-faq-section {
+  /* background-color: #f8f9fc; */
+  padding: 100px 24px;
+  box-sizing: border-box;
+}
+
+.dc001-faq-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ---- Header ---- */
+.dc001-faq-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 60px auto;
+}
+
+.dc001-faq-tag {
+  display: inline-block;
+  background-color: #e0e9ff;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
+
+.dc001-faq-title {
+  font-size: 40px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 12px 0;
+}
+
+.dc001-faq-subtitle {
+  font-size: 16px;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ---- Grid layout ---- */
+.dc001-faq-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 50px;
+  align-items: start;
+}
+
+/* ---- Left media block ---- */
+.dc001-faq-media {
+  position: relative;
+}
+
+.dc001-faq-img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+  background-color: #e2e8f0; /* placeholder color until image is added */
+}
+
+.dc001-faq-float-card {
+  position: absolute;
+  bottom: -24px;
+  right: -24px;
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 20px 22px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 170px;
+}
+
+.dc001-faq-float-number {
+  font-size: 26px;
+  font-weight: 800;
+  color: #60a5fa;
+}
+
+.dc001-faq-float-label {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #cbd5e1;
+}
+
+/* ---- Accordion ---- */
+.dc001-faq-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.dc001-faq-item {
+  background-color: #ffffff;
+  border: 1px solid #e6e9f0;
+  border-radius: 12px;
+  overflow: hidden;
+  /* transition covers border, shadow, and scale so the hover animation is smooth */
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+/* ---- NEW: Hover glow + grow effect ---- */
+.dc001-faq-item:hover {
+  transform: scale(1.01); /* grows the card by 0.1rem-ish visually */
+  box-shadow:
+    0 0 0 1px rgba(37, 99, 235, 0.35),
+    0 8px 24px rgba(37, 99, 235, 0.18);
+  border-color: #93b4f8;
+}
+
+/* Hide the actual checkbox input */
+.dc001-faq-input {
+  display: none;
+}
+
+.dc001-faq-q {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 22px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.dc001-faq-q-num {
+  font-size: 13px;
+  font-weight: 700;
+  color: #94a3b8;
+  min-width: 22px;
+}
+
+.dc001-faq-q-text {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.dc001-faq-q-icon {
+  font-size: 20px;
+  font-weight: 400;
+  color: #2563eb;
+  transition: transform 0.25s ease;
+  line-height: 1;
+}
+
+/* Answer panel — collapsed by default */
+.dc001-faq-a {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 22px;
+  transition:
+    max-height 0.3s ease,
+    padding 0.3s ease;
+}
+
+.dc001-faq-a p {
+  margin: 0 0 20px 0;
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: #64748b;
+}
+
+/* ---- Checked state (this is what makes it work without JS) ---- */
+.dc001-faq-input:checked ~ .dc001-faq-a {
+  max-height: 300px;
+  padding: 0 22px;
+}
+
+.dc001-faq-input:checked ~ .dc001-faq-q .dc001-faq-q-icon {
+  transform: rotate(45deg);
+}
+
+.dc001-faq-input:checked ~ .dc001-faq-q {
+  background-color: #f4f7ff;
+}
+
+.dc001-faq-item:has(.dc001-faq-input:checked) {
+  border-color: #2563eb;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 860px) {
+  .dc001-faq-grid {
+    grid-template-columns: 1fr;
+  }
+  .dc001-faq-img {
+    height: 320px;
+  }
+  .dc001-faq-float-card {
+    right: 16px;
+  }
+  .dc001-faq-title {
+    font-size: 30px;
+  }
+}
+/* ================= END DC001 FAQ SECTION STYLES ================= */
+/* AI-gen-section-end*/
